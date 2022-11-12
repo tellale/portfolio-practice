@@ -1,0 +1,96 @@
+/* my variables */
+:root {
+    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 16px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-sans);
+}
+
+.logo {
+    width: 15%;
+    max-width: 80px;
+}
+
+.menu {
+    display: none;
+}
+
+.menu .item {
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--font-mono);
+    padding: 0 8px;
+    color: #000;
+}
+
+/* background imag nav & header */
+.hero-image {
+    background-image: url("");
+    background-color: #fff;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* header section */
+.header {
+    text-align: left;
+    font-family: var(--font-sans);
+    margin: 40px 80px;
+}
+
+.header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.header h2 {
+    font-size: 1.2em;
+    padding: 10px 0;
+
+}
+
+.header p {
+    font-family: var(--font-mono);
+    padding: 5px 0;
+
+}
+
+.subline {
+    font-size: 0.8em;
+}
+
+.header a {
+    border: #c030e4;
+    border-style: solid;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: var(--font-mono);
+    color: #000;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1em;
+}
+
+
+
+/* Responsive */
+
+@media screen and (min-width: 576px) {
+    .navbar .menu {
+        display: flex;
+    }
+    
+}
