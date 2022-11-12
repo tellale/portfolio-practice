@@ -31,25 +31,26 @@
     <header>
         <p> Hi there, I'm</p>
         <h1> Ale Tello </h1>
-        <h2> Fullstack developer & Marketer helping you conquer the web </h2>
+        <h2> Fullstack Developer & Marketer helping you conquer the web </h2>
+        <p> Meaning I know how to create amazing things online, and how to sell them too 😉</p>
         <a href="#">Let's talk</a>
     </header>
     <main>
         <div class="about-me">
-            <h2>About me</h2>
-            <h3>Hola! Let me tell you a bit about myself</h3>
+            <h2>👋 Let me tell you a bit about myself...</h2>
             <p>I'm career-shifting from digital marketing to software. I have training in Python, JavaScript, Git, and GitHub. I'm a digitalisation expert with experience in digital marketing, managing teams to achieve key results within time constraints.
                 I like working in fast-changing environments and learn new technologies quickly. I am problem-solving oriented, have great communication skills and work well with others.</p>
-            <p>That was a lot of 'I's in a sentence, but now you can have an idea of who is the person behind this page...</p>
+            <p>(That was a lot of 'I's in a paragraph, but now you can have an idea of who is the person behind this page)</p>
         </div>
         <div class="skills">
+            <h2>👀 I'm interested in ...</h2>
             <img src="" alt="Python">
             <img src="" alt="JS">
             <img src="" alt="HTML 5">
             <img src="" alt="CSS">
         </div>
         <div class="certifications">
-            <h2>Certifications</h2>
+            <h2>🌱 I'm currently learning ...</h2>
             <div>
                 <h3>Project Manager</h3>
             </div>
@@ -64,21 +65,52 @@
             </div>
         </div>
         <div class="contact">
-            <h2>Let's talk!</h2>
-            <form action="">
+            <h2>📫 Let's talk!</h2>
+            <form action="" method="post">
+                <div>
                 <label for="name">Name</label>
-                <input type="text">
+                <input required id="name" name="name" type="text" placeholder="Write your name here">
+                </div>
+
+                <div>
                 <label for="lname">Last Name</label>
-                <input type="text">
-                <label for="tel">Phone</label>
-                <input type="tel" name="tel" id="tel">
+                <input required id="lname" name="lname" type="text" placeholder="Write your last name here">
+                </div>
+
+                <div>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]+" placeholder="Write your phone number here">
+                </div>
+
+                <div>
                 <label for="gitname">Github Username</label>
-                <input type="text">
-                <label for="knowme">How did you know me?</label>
-                <input type="radio">
+                <input id="gitname" name="gitname" type="text" pattern="@+[a-z]" placeholder="@yourgithubusername">
+                </div>
+
+                <div>
+                <fieldset>
+                    <legend>How do you know me?</legend>
+
+                    <label for="uni">University</label>
+                    <input type="radio" id="uni" name="knowme" value="uni">
+
+                    <label for="kc">KeepCoding</label>
+                    <input type="radio" id="kc" name="knowme" value="kc">
+
+                    <label for="li">LinkedIn</label>
+                    <input type="radio" name="knowme" id="li" value="li">
+
+                </fieldset>
+                </div>
+
+                <div>
                 <label for="moreinfo">More Information</label>
-                <input type="text">
+                <textarea name="moreinfo" id="moreinfo"></textarea>
+                </div>
+
+                <div>
                 <input type="submit" value="Send">
+                </div>
             </form>
         </div>
     </main>
