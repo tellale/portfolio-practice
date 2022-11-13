@@ -5,17 +5,42 @@
     font-size: 16px;
 }
 
+/* Global Styles */
+
+h1 {
+    font-family: var(--font-sans);
+    font-weight: bolder;
+    font-size: 3em;
+    padding: 10px 0;
+}
+
+h2 {
+    font-family: var(--font-sans);
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 10px 0;
+}
+
+p {
+    font-family: var(--font-mono);
+    font-size: 1em;
+}
+
+
+/* Nav Bar */
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     font-family: var(--font-sans);
+    flex-wrap: wrap;
+
 }
 
 .logo {
     width: 15%;
-    max-width: 80px;
+    max-width: 80vh;
 }
 
 .menu {
@@ -30,11 +55,12 @@
     color: #000;
 }
 
+
 /* background imag nav & header */
 .hero-image {
-    background-image: url("");
-    background-color: #fff;
-    height: 500px;
+    background-image: url("/images/bg-img.jpg");
+    background-color: rgb(228, 228, 228);
+    height: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,26 +68,36 @@
 
 
 /* header section */
-.header {
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.column {
+    padding: 0 10px;
     text-align: left;
-    font-family: var(--font-sans);
-    margin: 40px 80px;
+    max-width: 50vh;
+    margin-top: 40px;
 }
 
-.header h1 {
-    font-size: 3em;
-    font-weight: bold;
-    padding: 10px 0;
-}
-
-.header h2 {
-    font-size: 1.2em;
-    padding: 10px 0;
+.column img {
+    width: 80%;
 
 }
 
-.header p {
-    font-family: var(--font-mono);
+.column h1, h2, p, a {
+    margin: 0 40px;
+}
+
+.column h2{
+    font-weight: normal;
+}
+
+.column p {
     padding: 5px 0;
 
 }
@@ -70,7 +106,7 @@
     font-size: 0.8em;
 }
 
-.header a {
+.column a {
     border: #c030e4;
     border-style: solid;
     border-radius: 15px;
@@ -84,13 +120,48 @@
     font-size: 1em;
 }
 
+/* About me section */
+.about-me {
+    margin: 0 80px;
+    text-align: center;
+    line-height: 1.5em;
+    justify-content: center;
+}
+
+.about-me .subline {
+    font-size: 0.8em;
+}
 
 
 /* Responsive */
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 747px) {
     .navbar .menu {
         display: flex;
+        justify-content: center;
+        max-width: 100vh;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    .column {
+        max-width: 100vh;
     }
     
+    .column img {
+        display: flex;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .navbar .menu {
+        display: flex;
+        justify-content: center;
+        max-width: 100vh;
+        flex-wrap: wrap;
+    }
 }
