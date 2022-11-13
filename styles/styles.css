@@ -12,6 +12,7 @@ h1 {
     font-weight: bolder;
     font-size: 3em;
     padding: 10px 0;
+    color: #fff;
 }
 
 h2 {
@@ -19,17 +20,20 @@ h2 {
     font-weight: bold;
     font-size: 1.8em;
     padding: 10px 0;
+    color: #fff;
 }
 
 h3 {
     font-family: var(--font-sans);
     font-weight: bold;
     font-size: 1.2em;
+    color: #fff;
 }
 
 p {
     font-family: var(--font-mono);
     font-size: 1em;
+    color: #fff;
 }
 
 strong {
@@ -63,7 +67,7 @@ section {
 
 .navbar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     font-family: var(--font-sans);
     flex-wrap: wrap;
@@ -72,11 +76,12 @@ section {
 
 .logo {
     width: 15%;
-    max-width: 80vh;
+    max-width: 8vh;
 }
 
 .menu {
     display: none;
+
 }
 
 .menu .item {
@@ -84,14 +89,21 @@ section {
     text-align: center;
     font-family: var(--font-mono);
     padding: 0 8px;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.item:hover{
     color: #000;
+    border-bottom: 1px solid #000;
+
 }
 
 
 /* background imag nav & header */
 .hero-image {
-    background-image: url("/images/bg-img.jpg");
-    background-color: rgb(228, 228, 228);
+    background-image: url("/images/bg-img.png");
+    background-color: #c030e4;
     height: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -111,9 +123,9 @@ section {
 
 .column {
     padding: 0 10px;
-    text-align: left;
+    text-align: center;
     max-width: 50vh;
-    margin-top: 40px;
+    
 }
 
 .column img {
@@ -121,8 +133,9 @@ section {
 
 }
 
-.column h1, h2, p, a {
-    margin: 0 40px;
+.container h1, h2, p, a {
+    margin: 0 40px 0 40px;
+
 }
 
 .column h2{
@@ -131,11 +144,13 @@ section {
 
 .column p {
     padding: 5px 0;
+    color: #fff;
 
 }
 
 .subline {
     font-size: 0.8em;
+
 }
 
 .column a {
@@ -144,12 +159,17 @@ section {
     border-radius: 15px;
     text-decoration: none;
     font-family: var(--font-mono);
-    color: #000;
     padding: 15px;
     margin-top: 20px;
     text-align: center;
     display: inline-block;
     font-size: 1em;
+    color: #fff;
+}
+
+.column a:hover{
+    background-color: #fff;
+    color: #c030e4;
 }
 
 
@@ -161,14 +181,26 @@ section {
     justify-content: center;
 }
 
+.about-me h2, h3, p {
+    color: #000;
+}
+
 .about-me .subline {
     font-size: 0.8em;
 }
 
 /* Skills Section */
 
+.skills h2, h3, p {
+    color: #000;
+}
+
 
 /* Certifications Section */
+
+.certifications h2, h3, p {
+    color: #000;
+}
 
 span {
     font-family: var(--font-mono);
@@ -250,6 +282,10 @@ span {
 
 /* Contact Section */
 
+.contact h2, h3, p {
+    color: #000;
+}
+
 label, legend {
     display: inline-block;
     font-family: var(--font-mono);
@@ -271,6 +307,7 @@ input[type=submit] {
     text-decoration: none;
     cursor: pointer;
     font-size: 1.3em;
+    border-radius: 15px;
 }
 
 .radio-input label {
@@ -286,22 +323,30 @@ input[type=submit] {
     margin: 20px 0;
 }
 
+
 /* Footer */
 
 footer {
-    background-color: #c030e4;
-    color: #fff;
+    background-color: #dd81f4;
+    color: #000;
     text-align: center;
-    height: 5vh;
+    height: 10vh;
 }
 
 footer p {
     padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer img {
+    width: 4%;
+    max-width: 25px;
 }
 
 /* Responsive */
 
 @media screen and (min-width: 747px) {
+
     .navbar .menu {
         display: flex;
         justify-content: center;
@@ -315,12 +360,14 @@ footer p {
 
     .column {
         max-width: 100vh;
+        text-align: left;
     }
     
     .column img {
         display: flex;
         width: 80%;
     }
+
 }
 
 @media screen and (min-width: 1060px) {

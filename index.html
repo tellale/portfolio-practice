@@ -10,33 +10,33 @@
 </head>
 <body>
     <header class="hero-image">
+
         <nav class="navbar">
-            <img class="logo" src="/images/A.png" alt="logo ale tello">
-            <ul class="menu">
-                <li>
-                    <a class="item" href="#">About me</a> 
-                </li>
-                <li>
-                    <a class="item" href="#">Skillset</a> 
-                </li>
-                <li>
-                    <a class="item" href="#">Certifications</a> 
-                </li>
-                <li>
-                    <a class="item" href="#">Contact</a> 
-                </li>
-                <li>
-                    <a class="item" href="#">Resume</a> 
-                </li>
-            </ul>
+            <img class="logo" src="/images/A-w.png" alt="logo ale tello">
+                <ul class="menu">
+                    <li >
+                        <a class="item" href="#about-me">About me</a> 
+                    </li>
+                    <li >
+                        <a class="item" href="#skills">Skillset</a> 
+                    </li>
+                    <li >
+                        <a class="item" href="#certifications">Certifications</a> 
+                    </li>
+                    <li>
+                        <a class="item" href="#contact">Contact</a> 
+                    </li>
+                </ul>
+            </div>
         </nav>
+
         <section class="container">
             <div class="column">
                 <p> Hi there, I'm</p>
                 <h1> Ale Tello </h1>
                 <h2> Fullstack Developer & Marketer helping you conquer the web </h2>
                 <p class="subline"> Meaning I know how to create amazing things online, and how to sell them too 😉</p>
-                <a href="#">Let's talk</a>
+                <a href="#contact">Let's talk</a>
             </div>
             <div class="column">
                 <img src="/images/me-header.png" alt="ale tello Fullstack developer and marketer">
@@ -44,13 +44,13 @@
         </section>
     </header>
     <main>
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <h2>Let me tell you a bit about me...</h2>
             <p>I'm career-shifting from digital marketing to software. I have training in <strong>Python, JavaScript, Git, and GitHub.</strong> I'm a digitalisation expert with experience in digital marketing, managing teams to achieve key results within time constraints.
                 I like working in fast-changing environments and learn new technologies quickly. I am problem-solving oriented, have great communication skills and work well with others.</p>
             <p class="subline"> <em>(That was a lot of 'I's in a paragraph, but now you can have an idea of who is the person behind this page)</em></p>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2>👀 I'm interested in ...</h2>
             <div class="parent">
                 <div class="child">
@@ -71,7 +71,7 @@
                 </div>
             </div>
         </section>
-        <section class="certifications">
+        <section class="certifications" id="certifications">
             <h2>🌱 I'm currently learning ...</h2>
             <div class="parent">
                 <div class="child">
@@ -117,10 +117,10 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div>
                 <h2>📫 Let's talk!</h2>
-                <form action="" method="post">
+                <form action="/registro-completado.html" method="post">
                     <div class="form-input">
                     <label for="name">Name</label>
                     <input required id="name" name="name" type="text" placeholder="Write your name here">
@@ -138,7 +138,7 @@
 
                     <div class="form-input">
                     <label for="gitname">Github Username</label>
-                    <input id="gitname" name="gitname" type="text" pattern="@+[a-z]" placeholder="@yourgithubusername">
+                    <input id="gitname" name="gitname" type="text" pattern="^@[^\s]+" placeholder="@yourgithubusername">
                     </div>
 
                     <div class="form-input">
@@ -159,7 +159,7 @@
 
                     <div class="form-input">
                     <label for="moreinfo">More Information</label>
-                    <textarea name="moreinfo" id="moreinfo"></textarea>
+                    <textarea name="moreinfo" id="moreinfo" maxlength="180"></textarea>
                     </div>
 
                     <div class="form-input">
@@ -171,6 +171,12 @@
     </main>
     <footer>
         <p> Ale Tello © </p>
+        <a href="https://github.com/tellale">
+            <img src="/images/guthub-logo.png" alt="github logo">
+        </a>
+        <a href="https://www.linkedin.com/in/alejandratello/">
+            <img src="/images/linkedin-logo.png" alt="linkedin logo">
+        </a>
     </footer>
 </body>
 </html>
