@@ -102,7 +102,7 @@ section {
 
 /* background imag nav & header */
 .hero-image {
-    background-image: url("/images/bg-img.png");
+    background-image: url("../images/bg-img.png");
     background-color: #c030e4;
     height: auto;
     background-position: center;
