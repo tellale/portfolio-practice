@@ -22,7 +22,7 @@ h2 {
 }
 
 h3 {
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -42,14 +42,14 @@ em {
 
 section {
     text-align: center;
-    margin: 40px 40px;
+    margin: 80px 50px;
 }
 
 /* 4 Column Flex Box - Responsive */
 .parent {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -170,6 +170,84 @@ section {
 
 /* Certifications Section */
 
+span {
+    font-family: var(--font-mono);
+}
+
+.certifications h3 {
+    margin: 40px 60px
+}
+ .progress-bar {
+    background: #959595;
+    width: 100%;
+    min-width: 400px;
+    height: 10px;
+    border-radius: 5px;
+ }
+
+ .progress-bar div {
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+    background: #c030e4;
+ }
+
+ .progress-bar div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #c030e4;
+    background: #fff;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #c030e4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .pm {
+    animation: pm 1s linear forwards;
+ }
+
+ .it {
+    animation: it 1s linear forwards;
+ }
+
+.ux {
+    animation: ux 1s linear forwards;
+}
+
+.fs {
+    animation: fs 1s linear forwards;
+}
+
+@keyframes pm {
+    100%{
+        width: 30%;
+    }   
+}
+
+@keyframes it {
+    100%{
+        width: 45%;
+    }   
+}
+
+@keyframes ux {
+    100%{
+        width: 10%;
+    }   
+}
+
+@keyframes fs {
+    100%{
+        width: 65%;
+    }   
+}
+ 
+
 /* Contact Section */
 
 label, legend {
@@ -206,6 +284,19 @@ input[type=submit] {
 
 .form-input {
     margin: 20px 0;
+}
+
+/* Footer */
+
+footer {
+    background-color: #c030e4;
+    color: #fff;
+    text-align: center;
+    height: 5vh;
+}
+
+footer p {
+    padding-top: 20px;
 }
 
 /* Responsive */
