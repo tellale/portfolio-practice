@@ -17,13 +17,45 @@ h1 {
 h2 {
     font-family: var(--font-sans);
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding: 10px 0;
+}
+
+h3 {
+    font-family: var(--font-mono);
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 p {
     font-family: var(--font-mono);
     font-size: 1em;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+section {
+    text-align: center;
+    margin: 40px 40px;
+}
+
+/* 4 Column Flex Box - Responsive */
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.child {
+    flex: 1 0 21%;
+    margin: 5px;
 }
 
 
@@ -120,11 +152,12 @@ p {
     font-size: 1em;
 }
 
+
 /* About me section */
 .about-me {
-    margin: 0 80px;
+    margin: 50px 80px;
     text-align: center;
-    line-height: 1.5em;
+    line-height: 1.8em;
     justify-content: center;
 }
 
@@ -132,6 +165,48 @@ p {
     font-size: 0.8em;
 }
 
+/* Skills Section */
+
+
+/* Certifications Section */
+
+/* Contact Section */
+
+label, legend {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 1.2em;
+    padding: 10px 10px;
+}
+
+input {
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    font-family: var(--font-mono);
+}
+
+input[type=submit] {
+    background-color: #c030e4;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+.radio-input label {
+    display: inline;
+    margin-left: 5px;
+}
+
+.radio-input input[type="radio"] {
+    width: 15px;
+}
+
+.form-input {
+    margin: 20px 0;
+}
 
 /* Responsive */
 
